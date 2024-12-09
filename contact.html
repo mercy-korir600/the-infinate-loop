@@ -1,41 +1,45 @@
-<!DOCTYPE html>
+
+      <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.html">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>The Infinate Loops</h1>
-    <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact page</title>
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>The Infinate Loops</h1>
+      <nav>
         <a href="index.html">Home</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="blog.html">Blog</a>
         <a href="resumes.html">Resumes</a>
         <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <p> 
-    <h3>Need help! Feel free to conduct us</h3>
-    </p>
-    <form action="">
-      <label>Name</label>
-      <input type="text">
-      <label>Email</label>
-      <input type="text">
-      <label>Phone Number</label>
-      <input type="numbers">
-      <label>Send Message</label>
-      <textarea name="message" id="message"></textarea>
-       
-      <button>SEND MESSAGE</button>
-    </form>
-   
+      </nav>
+    </header>
+    <section id="contact">
+      <h3>Contact Us</h3>
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
 
-</body>
-</html><footer>
-        <p>contact us at example@gmail.com</p>
-      </footer>
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" />
+
+        <label for="message">Send Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>contact us at infiniteloops@gmail.com</p>
+    </footer>
+  </body>
+</html>
